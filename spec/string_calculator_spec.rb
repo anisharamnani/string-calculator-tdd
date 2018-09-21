@@ -11,4 +11,8 @@ describe "#add" do
   it 'adds two numbers separated by a comma' do
     expect(add("1,2")).to eq(3)
   end
+
+  it 'adds more than two numbers together separated by commas' do
+    expect(add("1,2,3")).to eq(6)
+  end
 end
